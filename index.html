@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050807" />
+    <title>Monster — Unleash the Unusual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header glass">
+      <a class="brand" href="#top" aria-label="Monster home">
+        <span class="brand-mark">M</span>
+        <span>MONSTER</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#shop">Shop</a>
+        <a href="#story">Our energy</a>
+        <a href="#ritual">The ritual</a>
+      </nav>
+      <div class="header-actions">
+        <button class="circle-button sound-button" aria-label="Toggle sound" title="Toggle sound">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10v4h3l4 3V7l-4 3H5Zm10.7-.7a4 4 0 0 1 0 5.4M18.5 6.5a8 8 0 0 1 0 11"/></svg>
+        </button>
+        <button class="cart-button" id="open-cart" aria-label="Open shopping bag">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Zm3 0a4 4 0 0 1 8 0"/></svg>
+          <span>Bag</span><b id="cart-count">0</b>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span>Born to be unusual</p>
+          <h1>FUEL THE<br /><em>UNUSUAL.</em></h1>
+          <p class="hero-description">For the late-night makers, the rule breakers, and anyone who refuses to coast.</p>
+          <div class="hero-cta">
+            <a class="primary-button" href="#shop">Shop the drop <i>↗</i></a>
+            <button class="text-button" id="play-film"><span class="play-icon">▶</span> Play energy film</button>
+          </div>
+        </div>
+
+        <div class="hero-product" aria-label="Original green energy drink can">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="product-spec spec-left"><span>01</span><small>Original<br />formula</small></div>
+          <div class="product-spec spec-right"><span>160</span><small>mg caffeine<br />per can</small></div>
+          <div class="can-halo"></div>
+          <img class="hero-can" src="monster-can.png" alt="Lime green and black energy drink can" />
+          <p class="can-caption">Monster Original <span>•</span> 500ml</p>
+        </div>
+
+        <aside class="hero-side glass">
+          <span>Scroll to charge</span>
+          <div class="scroll-line"><i></i></div>
+          <span>01 / 04</span>
+        </aside>
+        <div class="hero-bottom-stats glass">
+          <div><b>500<span>ml</span></b><small>Big can energy</small></div>
+          <div><b>0<span>g</span></b><small>Added sugar*</small></div>
+          <div><b>∞</b><small>Unusual energy</small></div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Brand statement"><div>NO HALF MEASURES <i>✦</i> FIND YOUR EDGE <i>✦</i> MAKE YOUR MARK <i>✦</i> NO HALF MEASURES <i>✦</i> FIND YOUR EDGE <i>✦</i></div></section>
+
+      <section class="collection section" id="shop">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span>The collection</p>
+            <h2>Choose your<br /><em>charge.</em></h2>
+          </div>
+          <p>Four distinct ways to stay switched on. Pick your flavor, find your rhythm, make it yours.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card active" data-name="Original Green" data-price="3.99" data-color="#aaff00">
+            <span class="product-number">01</span><span class="availability">In stock</span>
+            <div class="mini-can green"><b>M</b></div>
+            <div class="card-footer"><div><h3>Original Green</h3><p>Classic citrus</p></div><button class="add-button" aria-label="Add Original Green to bag">+</button></div>
+          </article>
+          <article class="product-card pink" data-name="Ultra Rosá" data-price="4.29" data-color="#ff698e">
+            <span class="product-number">02</span><span class="availability">In stock</span>
+            <div class="mini-can rose"><b>M</b></div>
+            <div class="card-footer"><div><h3>Ultra Rosá</h3><p>Pink grapefruit</p></div><button class="add-button" aria-label="Add Ultra Rosá to bag">+</button></div>
+          </article>
+          <article class="product-card blue" data-name="Zero Ultra" data-price="4.29" data-color="#99ecff">
+            <span class="product-number">03</span><span class="availability">In stock</span>
+            <div class="mini-can ice"><b>M</b></div>
+            <div class="card-footer"><div><h3>Zero Ultra</h3><p>Light citrus</p></div><button class="add-button" aria-label="Add Zero Ultra to bag">+</button></div>
+          </article>
+          <article class="product-card orange" data-name="Mango Loco" data-price="4.49" data-color="#ff9429">
+            <span class="product-number">04</span><span class="availability">Limited</span>
+            <div class="mini-can mango"><b>M</b></div>
+            <div class="card-footer"><div><h3>Mango Loco</h3><p>Juiced mango</p></div><button class="add-button" aria-label="Add Mango Loco to bag">+</button></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience section" id="story">
+        <div class="experience-visual">
+          <p class="vertical-label">Energy — in every sense</p>
+          <div class="energy-field"><span class="bolt bolt-1">✦</span><span class="bolt bolt-2">✦</span><span class="bolt bolt-3">✦</span><div class="giant-mark">M</div></div>
+          <div class="experience-stamp"><span>01</span> / Fuel different</div>
+        </div>
+        <div class="experience-copy">
+          <p class="eyebrow"><span></span>More than a drink</p>
+          <h2>Made for people<br />who <em>make things<br />happen.</em></h2>
+          <p>We bottle a little chaos so you can turn the volume up on whatever gets you moving. No beige lives. No quiet ambitions.</p>
+          <div class="ingredient-grid">
+            <div><strong>160mg</strong><span>Caffeine</span></div><div><strong>B3 + B6</strong><span>Vitamins</span></div><div><strong>+ Taurine</strong><span>Focus fuel</span></div><div><strong>100%</strong><span>Full send</span></div>
+          </div>
+          <a class="arrow-link" href="#ritual">Meet the ingredients <i>→</i></a>
+        </div>
+      </section>
+
+      <section class="ritual section" id="ritual">
+        <div class="ritual-head"><p class="eyebrow"><span></span>The good stuff</p><h2>Built for your<br /><em>after hours.</em></h2></div>
+        <div class="ritual-cards">
+          <article><span>01</span><h3>Open</h3><p>That first sharp crack says the next few hours belong to you.</p><i>↗</i></article>
+          <article><span>02</span><h3>Focus</h3><p>Clean, bright energy when the rest of the world winds down.</p><i>✦</i></article>
+          <article><span>03</span><h3>Do</h3><p>Make the thing. Finish the lap. Own the night.</p><i>→</i></article>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <p class="eyebrow"><span></span>Stay in the loop</p>
+        <h2>First sip of<br />what's <em>next.</em></h2>
+        <form id="signup-form"><input type="email" required placeholder="Enter your email" aria-label="Email address" /><button class="primary-button">Join the weird <i>↗</i></button></form>
+        <p class="fine-print">By joining, you agree that ordinary is overrated.</p>
+      </section>
+    </main>
+
+    <footer><a class="brand" href="#top"><span class="brand-mark">M</span><span>MONSTER</span></a><p>© 2026 Monster. Drink different.</p><div><a href="#top">Instagram</a><a href="#top">TikTok</a><a href="#top">Terms</a></div></footer>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+      <div class="drawer-head"><div><p class="eyebrow"><span></span>Your order</p><h2>Bag <em>({<span id="drawer-count">0</span>})</em></h2></div><button class="close-button" id="close-cart" aria-label="Close cart">×</button></div>
+      <div class="cart-items" id="cart-items"><div class="empty-cart">Your bag is ready for something unusual.</div></div>
+      <div class="cart-footer"><div class="cart-total"><span>Subtotal</span><strong>$<span id="cart-total">0.00</span></strong></div><button class="checkout-button" id="checkout">Secure checkout <span>→</span></button><small>Taxes and shipping calculated at checkout.</small></div>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+    <div class="toast" id="toast"><span>✦</span><p><b>Added to your bag</b><small>Energy on its way.</small></p></div>
+    <div class="film-modal" id="film-modal" aria-hidden="true"><button class="close-button" id="close-film">×</button><div class="film-content"><div class="film-orb"></div><span>MONSTER / 2026</span><h2>MAKE<br />SOME <em>NOISE.</em></h2><button id="pause-film">Pause film</button></div></div>
+    <script src="script.js"></script>
+  </body>
+</html>
